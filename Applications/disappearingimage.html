@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disappearing Image</title>
+    <script>
+        function byeBye() {
+            var image = document.getElementById("happydog");
+            image.style.display = "none";
+
+            var supriseImage = document.getElementById("suprise");
+            supriseImage.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+<button type="button" onClick="byeBye()">Click button for surprise</button>
+<img id="happydog" src="img/pitbullsmile.jpg" width="200" />
+<img id="suprise" src="img/3408.jpg" width="200" style="display: none" />
+</body>
+</html>
